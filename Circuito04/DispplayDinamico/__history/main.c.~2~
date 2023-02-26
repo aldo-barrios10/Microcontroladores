@@ -1,0 +1,18 @@
+//Ejercicio Pantalla LCD
+#include<16f887.h>
+#fuses INTRC_IO,NOWDT,PROTECT,NOLVP,MCLR,NOBROWNOUT
+#use delay(INTERNAL=4000000)
+
+#include<lcd.c>
+
+void main()
+{
+   lcd_init();
+   while(true)
+   {
+      printf(lcd_putc,"\fHello there!");
+      delay_ms(1000);
+   }
+}
+
+

@@ -1,0 +1,44 @@
+#include<16f887.h>
+//BITS PARA MUESTREOS
+#device ADC=10
+#fuses INTRC_IO,NOWDT,PROTECT,NOLVP,MCLR,NOBROWNOUT
+//ESTABLECER PUERTO D PARA LCD
+#define LCD_DATA_PORT getenv("SFR:PORTD")
+#use delay(INTERNAL=4000000)
+#include <lcd.c>
+
+void main(){
+   //VARIABLES PARA OPERAR Y MOSTRAR (16b)
+   int16 iVolt;
+   int16 iAng;
+   int16 voltaje;
+   int16 angulo;
+   lcd_init();
+   //ACTIVAR EL PUERTO PARA SEÑAL ANALOGICA
+   setup_adc_ports(sAN0);
+   setup_adc(ADC_CLOCK_INTERNAL);
+   
+   while(TRUE){
+      //ASIGNAMOS A LAS VARIABLES EL VALOR DEL MUESTREO
+      iVolt=read_adc();
+      iAng = read_adc();
+      //OPERACIÓN PARA MOSTRAR ANGULO Y VOLTAJE
+      voltaje = (iVolt*5)/1024;
+      angulo = (iAng*270)/1024;
+      //SE IMPRIMEN LOS VALORES EN LCD
+      printf(lcd_putc,"\f");
+      lcd_gotoxy(1,1);
+      printf(lcd_putc,"Voltaje: %Lu",voltaje);
+      lcd_gotoxy(1,2);
+      printf(lcd_putc,"Angulo: %Lu",angulo);
+      delay_ms(500);
+      
+   }
+
+}
+
+
+
+
+
+

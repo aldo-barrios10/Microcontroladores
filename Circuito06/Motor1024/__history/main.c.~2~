@@ -1,0 +1,19 @@
+#include<16f887.h>
+#fuses INTRC_IO,NOWDT,PROTECT,NOLVP,MCLR,NOBROWNOUT
+//Asignación de puerto D para LCD
+#define LCD_DATA_PORT getenv("SFR:PORTD")
+#use delay(INTERNAL=4000000)
+
+//Libreria para usar LCD
+#include<lcd.c>
+void main()
+{
+
+   lcd_init();
+
+   while(TRUE)
+   {
+      //TODO: User Code
+   }
+
+}

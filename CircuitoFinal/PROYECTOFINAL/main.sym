@@ -1,0 +1,167 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+008     lcdlat
+008     lcd
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020     rs232_errors
+021     @TRIS_C
+022-025 atan2.y
+022-023 MAIN.temp1
+024-025 MAIN.temp2
+026     MAIN.modo
+026-029 atan2.x
+027     lcd_init.i
+027-028 manual.temp1
+027-028 automatico.temp1
+027     @PSTRINGC7_9600_62_63.@SCRATCH1
+028-02B lcd_init.LCD_INIT_STRING
+028     @PSTRINGC7_9600_62_63.@SCRATCH2
+029-02A automatico.temp2
+029-02A manual.temp2
+029     @PSTRINGC7_9600_62_63.@SCRATCH3
+02A-02D atan2.z
+02A     @PSTRINGC7_9600_62_63.@SCRATCH4
+02B.0   automatico.x
+02B.0   manual.x
+02C     manual.op
+02C     automatico.a
+02C     lcd_init.@SCRATCH1
+02D     manual.m1
+02D     automatico.m1
+02E     automatico.m2
+02E.0   atan2.sign
+02E     manual.m2
+02F     atan2.quad
+02F-030 @PRINTF_LU_646.P1
+02F     @PSTRINGCN7_646.P2
+02F-030 @PRINTF_LU_9600_62_63.P3
+02F     @PSTRINGCN7_9600_62_63.P4
+02F     @GETCH_BIU_1.@SCRATCH1
+02F     automatico.@SCRATCH1
+02F     @PSTRINGC7_646.@SCRATCH1
+02F     manual.@SCRATCH1
+030     @GETCH_BIU_1.@SCRATCH2
+030     @PSTRINGC7_646.@SCRATCH2
+030     @PSTRINGCN7_646.@SCRATCH1
+030     @PSTRINGCN7_9600_62_63.@SCRATCH1
+031     @PSTRINGC7_646.@SCRATCH3
+031     @PSTRINGCN7_646.@SCRATCH2
+031     @PRINTF_LU_646.@SCRATCH1
+031     @PSTRINGCN7_9600_62_63.@SCRATCH2
+031     @PRINTF_LU_9600_62_63.@SCRATCH1
+032     @PSTRINGC7_646.@SCRATCH4
+032     @PSTRINGCN7_646.@SCRATCH3
+032     @PRINTF_LU_646.@SCRATCH2
+032     @PSTRINGCN7_9600_62_63.@SCRATCH3
+032     @PRINTF_LU_9600_62_63.@SCRATCH2
+033     @PSTRINGCN7_646.@SCRATCH4
+033     @PRINTF_LU_646.@SCRATCH3
+033     @PSTRINGCN7_9600_62_63.@SCRATCH4
+033     @PRINTF_LU_9600_62_63.@SCRATCH3
+034     @PRINTF_LU_646.@SCRATCH4
+034     @PRINTF_LU_9600_62_63.@SCRATCH4
+035     @PRINTF_LU_646.@SCRATCH5
+035     @PRINTF_LU_9600_62_63.@SCRATCH5
+036     @PRINTF_LU_646.@SCRATCH6
+036     @PRINTF_LU_9600_62_63.@SCRATCH6
+037     @PRINTF_LU_646.@SCRATCH7
+037     @PRINTF_LU_9600_62_63.@SCRATCH7
+038     lcd_putc.c
+039     @delay_ms1.P1
+039     lcd_gotoxy.x
+03A     lcd_gotoxy.y
+03B     lcd_gotoxy.address
+03C     lcd_gotoxy.@SCRATCH1
+03D     lcd_send_byte.address
+03E     lcd_send_byte.n
+03F     lcd_read_byte.low
+03F     lcd_send_byte.@SCRATCH1
+040     lcd_send_nibble.n
+040     lcd_read_byte.high
+041     lcd_read_byte.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+088     lcdtris
+107.6   C1OUT
+108.6   C2OUT
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const814.call
+00000A  @const817.call
+000011  @const822.call
+000018  @const823.call
+00001F  @const824.call
+000026  @const825.call
+000032  @const830.call
+00003D  @const839.call
+000043  @const841.call
+00004B  @const842.call
+000053  @const843.call
+000060  @const844.call
+00006B  @const852.call
+00007C  @const854.call
+00008B  @delay_ms1
+0000A0  lcd_send_nibble
+0000AC  lcd_read_nibble
+0000B2  lcd_send_byte
+0000B8  lcd_read_byte
+0000F2  lcd_init
+000130  @PSTRINGC7_9600_62_63
+000188  lcd_gotoxy
+00019A  lcd_putc
+0001C6  @PSTRINGC7_646
+00021C  @PSTRINGCN7_646
+000273  @PRINTF_LU_646
+0002D6  @GETCH_BIU_1
+0002F1  @PSTRINGCN7_9600_62_63
+00034A  @PRINTF_LU_9600_62_63
+0003A3  automatico
+000540  manual
+0006BE  MAIN
+0006BE  @cinit1
+0006E3  @cinit2
+
+Project Directory:
+    C:\CCS EFREN\PROYECTOFINAL\
+
+Project Files:
+    main.c                                                  [30-nov.-22 15:21  CRC=F9AEFCF6]
+    ..\..\Program Files (x86)\PICC\Devices\16f887.h         [12-nov.-13 13:35  CRC=6CB1A611]
+    ..\..\Program Files (x86)\PICC\Drivers\lcd.c            [19-sep.-13 14:38  CRC=D1A6378A]
+    ..\..\Program Files (x86)\PICC\Drivers\math.h           [28-sep.-12 10:35  CRC=546412C9]
+    ..\..\Program Files (x86)\PICC\Drivers\stdbool.h        [21-may.-12 09:29  CRC=815AEDE8]
+
+Source signature=8F20C92A
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC16F887
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

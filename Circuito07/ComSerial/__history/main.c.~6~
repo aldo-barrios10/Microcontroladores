@@ -1,0 +1,30 @@
+#include<16f887.h>
+#device ADC=10
+#fuses INTRC_IO,NOWDT,PROTECT,NOLVP,MCLR,NOBROWNOUT
+#use delay(INTERNAL=4000000)
+#include<lcd.c>
+#use RS232(baud=9600, xmit=PIN_C6, rcv=PIN_C7, timeout=100)
+
+void main()
+{
+
+   int16 iVolt;
+   //int voltaje;
+   //int16 angulo;
+   lcd_init();
+   setup_adc_ports(sAN0);
+   setup_adc(ADC_CLOCK_INTERNAL);
+
+   lcd_init();
+
+   while(TRUE)
+   {
+      iVolt=read_adc();
+      printf(lcd_putc,"\f");
+      lcd_gotoxy(1,1);
+      printf(lcd_putc,"Voltaje: %Lu",iVolt);
+      delay_ms(1000);
+      //TODO: User Code
+   }
+
+}

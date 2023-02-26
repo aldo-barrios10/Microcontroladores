@@ -1,0 +1,102 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+008     lcdlat
+008     lcd
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+021-022 MAIN.puerto1
+023-024 MAIN.puerto2
+025     @PSTRINGCN7_646.P1
+025     lcd_init.i
+025-026 @PRINTF_LU_646.P1
+025     MAIN.@SCRATCH1
+026-029 lcd_init.LCD_INIT_STRING
+026     @PSTRINGCN7_646.@SCRATCH1
+027     @PSTRINGCN7_646.@SCRATCH2
+027     @PRINTF_LU_646.@SCRATCH1
+028     @PSTRINGCN7_646.@SCRATCH3
+028     @PRINTF_LU_646.@SCRATCH2
+029     @PSTRINGCN7_646.@SCRATCH4
+029     @PRINTF_LU_646.@SCRATCH3
+02A     lcd_init.@SCRATCH1
+02A     @PRINTF_LU_646.@SCRATCH4
+02B     @PRINTF_LU_646.@SCRATCH5
+02C     @PRINTF_LU_646.@SCRATCH6
+02D     @PRINTF_LU_646.@SCRATCH7
+02E     lcd_putc.c
+02F     @delay_ms1.P1
+02F     lcd_gotoxy.x
+030     lcd_gotoxy.y
+031     lcd_gotoxy.address
+032     lcd_gotoxy.@SCRATCH1
+033     lcd_send_byte.address
+034     lcd_send_byte.n
+035     lcd_read_byte.low
+035     lcd_send_byte.@SCRATCH1
+036     lcd_send_nibble.n
+036     lcd_read_byte.high
+037     lcd_read_byte.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+088     lcdtris
+107.6   C1OUT
+108.6   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const664.call
+00000B  @const669.call
+000012  @delay_ms1
+000027  lcd_send_nibble
+000033  lcd_read_nibble
+000039  lcd_send_byte
+00003F  lcd_read_byte
+000079  lcd_init
+0000B5  lcd_gotoxy
+0000C7  lcd_putc
+0000F3  @PSTRINGCN7_646
+00014A  @PRINTF_LU_646
+0001AD  MAIN
+0001AD  @cinit1
+0001C2  @cinit2
+
+Project Directory:
+    C:\CCS EFREN\PruebaADC\
+
+Project Files:
+    main.c                                                  [18-nov.-22 12:42  CRC=E120052A]
+    ..\..\Program Files (x86)\PICC\Devices\16f887.h         [12-nov.-13 13:35  CRC=6CB1A611]
+    ..\..\Program Files (x86)\PICC\Drivers\lcd.c            [19-sep.-13 14:38  CRC=D1A6378A]
+
+Source signature=F11E1A4F
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC16F887
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

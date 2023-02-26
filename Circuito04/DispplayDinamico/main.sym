@@ -1,0 +1,90 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+008     lcdlat
+008     lcd
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+021     lcd_init.i
+021     MAIN.@SCRATCH1
+021     @PSTRINGC7_646.@SCRATCH1
+022-025 lcd_init.LCD_INIT_STRING
+022     @PSTRINGC7_646.@SCRATCH2
+023     @PSTRINGC7_646.@SCRATCH3
+024     lcd_putc.c
+024     @PSTRINGC7_646.@SCRATCH4
+025     lcd_gotoxy.x
+026     @delay_ms1.P1
+026     lcd_gotoxy.y
+026     lcd_init.@SCRATCH1
+027     lcd_gotoxy.address
+028     lcd_gotoxy.@SCRATCH1
+029     lcd_send_byte.address
+02A     lcd_send_byte.n
+02B     lcd_read_byte.low
+02B     lcd_send_byte.@SCRATCH1
+02C     lcd_read_byte.high
+02C     lcd_send_nibble.n
+02D     lcd_read_byte.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+088     lcdtris
+107.6   C1OUT
+108.6   C2OUT
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const662.call
+00000B  @const664.call
+000012  @delay_ms1
+000027  lcd_send_nibble
+000033  lcd_read_nibble
+000039  lcd_send_byte
+00003F  lcd_read_byte
+000079  lcd_init
+0000B7  lcd_gotoxy
+0000C9  lcd_putc
+0000F5  @PSTRINGC7_646
+00014B  @cinit1
+00014B  MAIN
+000160  @cinit2
+
+Project Directory:
+    C:\CCS EFREN\DispPrueba\
+
+Project Files:
+    main.c                                                  [27-sep.-22 19:09  CRC=6170AC4D]
+    ..\..\Program Files (x86)\PICC\Devices\16f887.h         [12-nov.-13 14:35  CRC=6CB1A611]
+    ..\..\Program Files (x86)\PICC\Drivers\lcd.c            [19-sep.-13 15:38  CRC=D1A6378A]
+
+Source signature=716EC172
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC16F887
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

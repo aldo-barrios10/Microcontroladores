@@ -1,0 +1,123 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+008     lcd
+008     lcdlat
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+021-022 MAIN.iVolt
+023     MAIN.voltaje
+024-025 MAIN.angulo
+026-027 @PRINTF_LU_646.P1
+026     @PRINTF_D_646.P2
+026     @PSTRINGCN7_646.P3
+026     lcd_init.i
+026-027 @MUL1616.P1
+026     MAIN.@SCRATCH1
+027     @PRINTF_D_646.P1
+027-02A lcd_init.LCD_INIT_STRING
+027     MAIN.@SCRATCH2
+027     @PSTRINGCN7_646.@SCRATCH1
+028-029 @DIV1616.P1
+028-029 @MUL1616.P2
+028     @PSTRINGCN7_646.@SCRATCH2
+028     @PRINTF_D_646.@SCRATCH1
+028     @PRINTF_LU_646.@SCRATCH1
+029     @PSTRINGCN7_646.@SCRATCH3
+029     @PRINTF_D_646.@SCRATCH2
+029     @PRINTF_LU_646.@SCRATCH2
+02A-02B @DIV1616.P1
+02A     @MUL1616.@SCRATCH1
+02A     @PSTRINGCN7_646.@SCRATCH4
+02A     @PRINTF_D_646.@SCRATCH3
+02A     @PRINTF_LU_646.@SCRATCH3
+02B     lcd_init.@SCRATCH1
+02B     @PRINTF_D_646.@SCRATCH4
+02B     @PRINTF_LU_646.@SCRATCH4
+02C     @DIV88.P1
+02C     @DIV1616.@SCRATCH1
+02C     @PRINTF_LU_646.@SCRATCH5
+02D     @DIV88.P1
+02D     @PRINTF_LU_646.@SCRATCH6
+02E     @DIV88.@SCRATCH1
+02E     @PRINTF_LU_646.@SCRATCH7
+02F     lcd_putc.c
+030     lcd_gotoxy.x
+030     @delay_ms1.P1
+031     lcd_gotoxy.y
+032     lcd_gotoxy.address
+033     lcd_gotoxy.@SCRATCH1
+034     lcd_send_byte.address
+035     lcd_send_byte.n
+036     lcd_read_byte.low
+036     lcd_send_byte.@SCRATCH1
+037     lcd_read_byte.high
+037     lcd_send_nibble.n
+038     lcd_read_byte.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+088     lcdtris
+107.6   C1OUT
+108.6   C2OUT
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const671.call
+00000A  @const680.call
+000010  @delay_ms1
+000025  lcd_send_nibble
+000031  lcd_read_nibble
+000037  lcd_send_byte
+00003D  lcd_read_byte
+000077  lcd_init
+0000B5  @MUL1616
+0000CA  @DIV1616
+0000EF  lcd_gotoxy
+000101  lcd_putc
+00012D  @PSTRINGCN7_646
+000184  @DIV88
+000199  @PRINTF_D_646
+0001F2  @PRINTF_LU_646
+000257  @cinit1
+000257  MAIN
+00026C  @cinit2
+
+Project Directory:
+    C:\CCS EFREN\Display2\
+
+Project Files:
+    main.c                                                  [29-sep.-22 13:29  CRC=8D02E9E1]
+    ..\..\Program Files (x86)\PICC\Devices\16f887.h         [12-nov.-13 14:35  CRC=6CB1A611]
+    ..\..\Program Files (x86)\PICC\Drivers\lcd.c            [19-sep.-13 15:38  CRC=D1A6378A]
+
+Source signature=9D00FF06
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC16F887
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

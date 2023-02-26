@@ -1,0 +1,19 @@
+#include<16f887.h>
+#fuses INTRC_IO,NOWDT,PROTECT,NOLVP,MCLR,NOBROWNOUT
+#device ADC=8
+#use delay(INTERNAL=4000000)
+#include<lcd.c>
+
+void main()
+{
+   int8 valor;
+   lcd_init();
+   setup_ccp1(CCP_PWM);
+   
+
+   while(TRUE)
+   {
+      //TODO: User Code
+   }
+
+}

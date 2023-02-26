@@ -1,0 +1,30 @@
+C:\Users\aldo_\source\repos\MicroContrl\MicroContrl\bin\Debug\MicroContrl.exe.config
+C:\Users\aldo_\source\repos\MicroContrl\MicroContrl\bin\Debug\MicroContrl.exe
+C:\Users\aldo_\source\repos\MicroContrl\MicroContrl\bin\Debug\MicroContrl.pdb
+C:\Users\aldo_\source\repos\MicroContrl\MicroContrl\obj\Debug\MicroContrl.csproj.AssemblyReference.cache
+C:\Users\aldo_\source\repos\MicroContrl\MicroContrl\obj\Debug\MicroContrl.csproj.SuggestedBindingRedirects.cache
+C:\Users\aldo_\source\repos\MicroContrl\MicroContrl\obj\Debug\MicroContrl.Properties.Resources.resources
+C:\Users\aldo_\source\repos\MicroContrl\MicroContrl\obj\Debug\MicroContrl.csproj.GenerateResource.cache
+C:\Users\aldo_\source\repos\MicroContrl\MicroContrl\obj\Debug\MicroContrl.csproj.CoreCompileInputs.cache
+C:\Users\aldo_\source\repos\MicroContrl\MicroContrl\obj\Debug\MicroContrl.exe
+C:\Users\aldo_\source\repos\MicroContrl\MicroContrl\obj\Debug\MicroContrl.pdb
+C:\Users\aldo_\source\repos\MicroContrl\MicroContrl\bin\Debug\MicroContrl.exe.manifest
+C:\Users\aldo_\source\repos\MicroContrl\MicroContrl\bin\Debug\MicroContrl.application
+C:\Users\aldo_\source\repos\MicroContrl\MicroContrl\obj\Debug\MicroContrl.exe.manifest
+C:\Users\aldo_\source\repos\MicroContrl\MicroContrl\obj\Debug\MicroContrl.application
+C:\Users\aldo_\source\repos\MicroContrl\MicroContrl\obj\Debug\MicroContrl.Frame.resources
+C:\Users\aldo_\Documents\PFMICRO DIN\MicroContrl DIN\MicroContrl\bin\Debug\MicroContrl.exe.config
+C:\Users\aldo_\Documents\PFMICRO DIN\MicroContrl DIN\MicroContrl\bin\Debug\MicroContrl.exe.manifest
+C:\Users\aldo_\Documents\PFMICRO DIN\MicroContrl DIN\MicroContrl\bin\Debug\MicroContrl.application
+C:\Users\aldo_\Documents\PFMICRO DIN\MicroContrl DIN\MicroContrl\bin\Debug\MicroContrl.exe
+C:\Users\aldo_\Documents\PFMICRO DIN\MicroContrl DIN\MicroContrl\bin\Debug\MicroContrl.pdb
+C:\Users\aldo_\Documents\PFMICRO DIN\MicroContrl DIN\MicroContrl\obj\Debug\MicroContrl.csproj.AssemblyReference.cache
+C:\Users\aldo_\Documents\PFMICRO DIN\MicroContrl DIN\MicroContrl\obj\Debug\MicroContrl.csproj.SuggestedBindingRedirects.cache
+C:\Users\aldo_\Documents\PFMICRO DIN\MicroContrl DIN\MicroContrl\obj\Debug\MicroContrl.Frame.resources
+C:\Users\aldo_\Documents\PFMICRO DIN\MicroContrl DIN\MicroContrl\obj\Debug\MicroContrl.Properties.Resources.resources
+C:\Users\aldo_\Documents\PFMICRO DIN\MicroContrl DIN\MicroContrl\obj\Debug\MicroContrl.csproj.GenerateResource.cache
+C:\Users\aldo_\Documents\PFMICRO DIN\MicroContrl DIN\MicroContrl\obj\Debug\MicroContrl.csproj.CoreCompileInputs.cache
+C:\Users\aldo_\Documents\PFMICRO DIN\MicroContrl DIN\MicroContrl\obj\Debug\MicroContrl.exe.manifest
+C:\Users\aldo_\Documents\PFMICRO DIN\MicroContrl DIN\MicroContrl\obj\Debug\MicroContrl.application
+C:\Users\aldo_\Documents\PFMICRO DIN\MicroContrl DIN\MicroContrl\obj\Debug\MicroContrl.exe
+C:\Users\aldo_\Documents\PFMICRO DIN\MicroContrl DIN\MicroContrl\obj\Debug\MicroContrl.pdb

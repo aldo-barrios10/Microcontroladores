@@ -1,0 +1,134 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+008     lcd
+008     lcdlat
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+021-024 MAIN.iAnalog
+025     MAIN.voltaje
+026-029 MAIN.angulo
+02A     @PSTRINGCN7_646.P1
+02A     lcd_init.i
+02A-02D @PRINTF_L32D_646.P1
+02A-02D @MUL3232.P2
+02A     @PRINTF_D_646.P3
+02A     MAIN.@SCRATCH1
+02B     @PRINTF_D_646.P1
+02B-02E lcd_init.LCD_INIT_STRING
+02B     MAIN.@SCRATCH2
+02B     @PSTRINGCN7_646.@SCRATCH1
+02C     MAIN.@SCRATCH3
+02C     @PSTRINGCN7_646.@SCRATCH2
+02C     @PRINTF_D_646.@SCRATCH1
+02D     MAIN.@SCRATCH4
+02D     @PSTRINGCN7_646.@SCRATCH3
+02D     @PRINTF_D_646.@SCRATCH2
+02E-031 @MUL3232.P1
+02E     @PSTRINGCN7_646.@SCRATCH4
+02E     @PRINTF_D_646.@SCRATCH3
+02E     @PRINTF_L32D_646.@SCRATCH1
+02F     lcd_init.@SCRATCH1
+02F     @PRINTF_D_646.@SCRATCH4
+02F     @PRINTF_L32D_646.@SCRATCH2
+030     @DIV88.P1
+030     @PRINTF_L32D_646.@SCRATCH3
+031     @DIV88.P1
+031     @PRINTF_L32D_646.@SCRATCH4
+032     @MUL3232.@SCRATCH1
+032     @DIV88.@SCRATCH1
+032     @PRINTF_L32D_646.@SCRATCH5
+033     @MUL3232.@SCRATCH2
+033     @PRINTF_L32D_646.@SCRATCH6
+034     @MUL3232.@SCRATCH3
+034     @PRINTF_L32D_646.@SCRATCH7
+035     @MUL3232.@SCRATCH4
+035     @PRINTF_L32D_646.@SCRATCH8
+036     lcd_putc.c
+036-039 @DIV3232.P1
+036     @MUL3232.@SCRATCH5
+037     @delay_ms1.P1
+037     lcd_gotoxy.x
+038     lcd_gotoxy.y
+039     lcd_gotoxy.address
+03A-03D @DIV3232.P1
+03A     lcd_gotoxy.@SCRATCH1
+03B     lcd_send_byte.address
+03C     lcd_send_byte.n
+03D     lcd_read_byte.low
+03D     lcd_send_byte.@SCRATCH1
+03E     lcd_read_byte.high
+03E     lcd_send_nibble.n
+03E     @DIV3232.@SCRATCH1
+03F     lcd_read_byte.@SCRATCH1
+03F     @DIV3232.@SCRATCH2
+040     @DIV3232.@SCRATCH3
+041     @DIV3232.@SCRATCH4
+042     @DIV3232.@SCRATCH5
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+088     lcdtris
+107.6   C1OUT
+108.6   C2OUT
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const671.call
+00000A  @const680.call
+000010  @delay_ms1
+000025  lcd_send_nibble
+000031  lcd_read_nibble
+000037  lcd_send_byte
+00003D  lcd_read_byte
+000077  lcd_init
+0000B5  @MUL3232
+0000DF  @DIV3232
+00012E  lcd_gotoxy
+000140  lcd_putc
+00016C  @PSTRINGCN7_646
+0001C3  @DIV88
+0001D8  @PRINTF_D_646
+000231  @PRINTF_L32D_646
+0002B1  @cinit1
+0002B1  MAIN
+0002C6  @cinit2
+
+Project Directory:
+    C:\CCS EFREN\VOLTAJE\
+
+Project Files:
+    main.c                                                  [29-sep.-22 15:46  CRC=BEE17F36]
+    ..\..\Program Files (x86)\PICC\Devices\16f887.h         [12-nov.-13 14:35  CRC=6CB1A611]
+    ..\..\Program Files (x86)\PICC\Drivers\lcd.c            [19-sep.-13 15:38  CRC=D1A6378A]
+
+Source signature=CEDF945B
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC16F887
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

@@ -1,0 +1,30 @@
+#include<16f887.h>
+#fuses INTRC_IO,NOWDT,PROTECT,NOLVP,MCLR,NOBROWNOUT
+#define LCD_DATA_PORT getenv("SFR:PORTD")
+#use delay(INTERNAL=4000000)
+#include <lcd.c>
+
+void main(){
+   int16 iVolt;
+   int16 iAng;
+   float voltaje;
+   double angulo;
+   lcd_init();
+   setup_adc_ports(sAN0);
+   setup_adc(ADC_CLOCK_INTERNAL);
+   
+   while(TRUE){
+      iVolt=read_adc();
+      iAng = iVolt;
+      voltaje = (iVolt*6)/255;
+      angulo = (iAng*270)/255;
+      printf(lcd_putc,"\f");
+      lcd_gotoxy(1,1);
+      printf(lcd_putc,"Voltaje: %f",voltaje);
+      lcd_gotoxy(1,2);
+      printf(lcd_putc,"Angulo: %f",angulo);
+      delay_ms(500);
+      
+   }
+
+}

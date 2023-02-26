@@ -1,0 +1,23 @@
+//Ejercicio Pantalla LCD
+#include<16f887.h>
+#fuses INTRC_IO,NOWDT,PROTECT,NOLVP,MCLR,NOBROWNOUT
+#define LCD_DATA_PORT getenv("SFR:PORTD")
+#use delay(INTERNAL=4000000)
+
+#include<lcd.c>
+
+void main()
+{
+   lcd_init();
+   while(true)
+   {  
+      printf(lcd_putc,"\f");
+      lcd_gotoxy(3,1);
+      printf(lcd_putc,"Mexico pumas");
+      lcd_gotoxy(3,2);
+      printf(lcd_putc,"Universidad!");
+      delay_ms(1000);
+   }
+}
+
+
