@@ -9,10 +9,10 @@ que el resto fue realizado con C. En el caso de las interfaces (Circuitos 7 y fi
 más claridad, en el índice se encuentran los lenguajes utilizados para cada uno de los circuitos.
 
 Para el desarrollo de los proyectos se utilizaron los siguinetes programas:
--MPLAB: IDE para creación de proyectos en ensamblador.
--PIC C Compiler: IDE para la creación de proyectos en lenguaje C. 
--PicKit 3: Para cargar archivos .hex al microcontrolador.
--Visual Studio 2022: Uso de .NET para interfaces.
+- MPLAB: IDE para creación de proyectos en ensamblador.
+- PIC C Compiler: IDE para la creación de proyectos en lenguaje C. 
+- PicKit 3: Para cargar archivos .hex al microcontrolador.
+- Visual Studio 2022: Uso de .NET para interfaces.
 
 
 ## Índice
