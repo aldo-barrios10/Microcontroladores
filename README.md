@@ -16,11 +16,11 @@ Para el desarrollo de los proyectos se utilizaron los siguinetes programas:
 
 
 ## Índice
--Circuito 1: Réplica de puertos (ASM).
--Circuito 2: Comparador de bits (ASM).
--Circuito 3: Contador de 7 segmentos (ASM).
--Circuito 4: Mensaje dinámico en LCD (C).
--Circuito 5: Medición analógica (C). 
--Circuito 6: Uso de PWM y motores (C).
--Circuito 7: Comunicación serial por USB TTL (C/C#). 
--Circuito Final: Aire acondicionado automático (C/C#).
+- Circuito 1: Réplica de puertos (ASM).
+- Circuito 2: Comparador de bits (ASM).
+- Circuito 3: Contador de 7 segmentos (ASM).
+- Circuito 4: Mensaje dinámico en LCD (C).
+- Circuito 5: Medición analógica (C). 
+- Circuito 6: Uso de PWM y motores (C).
+- Circuito 7: Comunicación serial por USB TTL (C/C#). 
+- Circuito Final: Aire acondicionado automático (C/C#).
